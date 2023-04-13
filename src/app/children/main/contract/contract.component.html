@@ -1,0 +1,15 @@
+<div class="collections-container">
+  <h2>Collections</h2>
+
+  <div class="collections">
+    <ng-container *ngFor="let collection of collections">
+      <div class="card" (click)="goToCollection(collection)">
+        <div class="image"
+             [style.background-image]="'url(' + collection.imageUrl + ')'"></div>
+        <div>
+          <span>{{collection.name}}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.collections-container {
+  padding: 30px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .collections {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(213, 213, 213, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+
+    .image {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    span {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

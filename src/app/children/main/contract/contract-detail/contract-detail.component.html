@@ -1,0 +1,15 @@
+<div class="collection-container">
+  <h2>Collection: {{name}}</h2>
+
+  <div class="nfts">
+    <ng-container *ngFor="let nft of nfts">
+      <div class="card">
+        <div class="image"
+             [style.background-image]="'url(' + nft.imageUrl + ')'"></div>
+
+          <span style="font-weight: bold">{{nft.name}}</span>
+          <span>{{nft.description}}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>
